@@ -14,14 +14,9 @@ const back = () => {
 
 const equal = () => {
     let exp = document.form.textview.value;
-    console.log('eval(exp)');
-    eval(exp);
-    console.log(eval(exp));
-    if (eval(exp) == 'Infinity') {
-        document.form.textview.value = '';
-
-    }else{
+    if (exp && eval(exp) != 'Infinity') {
         document.form.textview.value = eval(exp);
     }
-    
+
+
 }
