@@ -55,6 +55,7 @@ input {
     font-size: 30px;
     outline: none;
     text-align: right;
+    padding: 1px;
 }
 
 .input {
